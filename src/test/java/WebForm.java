@@ -13,9 +13,6 @@ public class WebForm extends PageObject{
     @FindBy(id = "passwd")
     private WebElement passwd;
 
-    @FindBy(xpath = "//a[contains(text(),'Consent')]")
-    private WebElement submit_button2;
-
     @FindBy(id="SubmitLogin")
     private WebElement submit_login;
 
@@ -35,7 +32,4 @@ public class WebForm extends PageObject{
         this.submit_login.click();
     }
 
-    public void pressConsentButton(){
-        this.submit_button2.click();
-    }
 }
