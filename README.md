@@ -2,4 +2,4 @@
 
 This is a simple project for trying out Selenium together with TestNG.
 
-Remember to change the CHROME_DRIVER_LOCATION variable in the Utils class to match the path to chromedriver.
+Remember to change the CHROME_DRIVER_LOCATION variable in the Utils class to match the path to the chromedriver path on your computer.
