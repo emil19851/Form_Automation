@@ -4,8 +4,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-
-import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class TestPlan {
@@ -17,7 +15,7 @@ public class TestPlan {
         System.setProperty("webdriver.chrome.driver", Utils.CHROME_DRIVER_LOCATION);
     }
 
-    @Test(testName = "Submit a WebForm")
+    @Test(testName = "Enter login details")
     public static void submitForm(){
         driver.get(Utils.BASE_URL);
         WebForm webForm = new WebForm(driver);
