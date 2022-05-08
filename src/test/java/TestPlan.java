@@ -4,7 +4,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-import java.util.concurrent.TimeUnit;
 
 public class TestPlan {
     private static final WebDriver driver = new ChromeDriver();
@@ -19,7 +18,6 @@ public class TestPlan {
     public static void submitForm(){
         driver.get(Utils.BASE_URL);
         WebForm webForm = new WebForm(driver);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.findElement(By.className("fc-cta-consent")).click();
 
         webForm.enterEmailAddress();
