@@ -29,7 +29,6 @@ public class WebForm extends PageObject{
         super(driver);
     }
 
-
     // These methods interact with the elements of the webpage
 
     public void enterEmailAddress(){
