@@ -1,4 +1,3 @@
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
@@ -18,8 +17,8 @@ public class TestPlan {
     public static void submitForm(){
         driver.get(Utils.BASE_URL);
         WebForm webForm = new WebForm(driver);
-        driver.findElement(By.className("fc-cta-consent")).click();
 
+        webForm.acceptCookies();
         webForm.enterEmailAddress();
         webForm.enterPassword();
         webForm.pressSubmitButton();
