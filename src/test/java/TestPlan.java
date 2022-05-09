@@ -17,7 +17,6 @@ public class TestPlan {
     public static void submitForm(){
         driver.get(Utils.BASE_URL);
         WebForm webForm = new WebForm(driver);
-
         webForm.acceptCookies();
         webForm.enterEmailAddress();
         webForm.enterPassword();
